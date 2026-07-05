@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real-World Applications &middot; NLP Knowledge Repository</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main class="wrap">
+
+  <section class="hero" style="padding:48px 0 30px;">
+    <span class="token">section_d::real_world_applications</span>
+    <h1 style="max-width:22ch;">Where these building blocks actually ship.</h1>
+    <p class="lede">Five systems people use every day, and which Week 1 concepts make each one work.</p>
+  </section>
+
+  <section class="block" style="padding-top:34px;">
+    <div class="app-grid">
+
+      <div class="app-card">
+        <span class="token">app::search</span>
+        <h3>Search Engines</h3>
+        <p><strong>Concepts used:</strong> Tokenization, Stop-word Removal, Stemming/Lemmatization, TF-IDF, Word Embeddings.</p>
+        <p><strong>Why needed:</strong> Queries and documents must be normalized to the same form before they can be matched, and terms need weighting so rare, meaningful words outrank common ones.</p>
+        <p><strong>Expected benefit:</strong> Faster, more relevant results even when the query wording doesn't exactly match the document.</p>
+      </div>
+
+      <div class="app-card">
+        <span class="token">app::chatbots</span>
+        <h3>Chatbots &amp; Virtual Assistants</h3>
+        <p><strong>Concepts used:</strong> Tokenization, Lemmatization, Contextual Embeddings, Transformer-based Representations.</p>
+        <p><strong>Why needed:</strong> Understanding user intent requires context-aware meaning, not just keyword matching, since the same words can mean different things.</p>
+        <p><strong>Expected benefit:</strong> More natural, context-aware conversations and accurate intent detection.</p>
+      </div>
+
+      <div class="app-card">
+        <span class="token">app::sentiment</span>
+        <h3>Sentiment Analysis</h3>
+        <p><strong>Concepts used:</strong> Noise Removal, Tokenization, Bag of Words / TF-IDF, Word Embeddings.</p>
+        <p><strong>Why needed:</strong> Raw social media text is noisy; features need to capture emotional tone-bearing words, not just frequency.</p>
+        <p><strong>Expected benefit:</strong> Businesses can gauge public opinion on products or events at scale, in near real time.</p>
+      </div>
+
+      <div class="app-card">
+        <span class="token">app::translation</span>
+        <h3>Machine Translation</h3>
+        <p><strong>Concepts used:</strong> Sentence Segmentation, Tokenization, Word Embeddings, Transformer-based Representations.</p>
+        <p><strong>Why needed:</strong> Sentences must be understood in full context to preserve meaning across languages with different grammar and word order.</p>
+        <p><strong>Expected benefit:</strong> Fluent, context-correct translations rather than literal word-for-word substitutions.</p>
+      </div>
+
+      <div class="app-card">
+        <span class="token">app::summarization</span>
+        <h3>Text Summarization</h3>
+        <p><strong>Concepts used:</strong> Sentence Segmentation, TF-IDF, Contextual Embeddings, Neural/Transformer Language Models.</p>
+        <p><strong>Why needed:</strong> The system must judge which sentences or phrases carry the most important information in a document.</p>
+        <p><strong>Expected benefit:</strong> Saves reading time while preserving the core meaning of long documents, news, or reports.</p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script>window.ACTIVE_PAGE = "applications";</script>
+<script src="../js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparative Analysis &middot; NLP Knowledge Repository</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main class="wrap">
+
+  <section class="hero" style="padding:48px 0 30px;">
+    <span class="token">section_b::comparative_analysis</span>
+    <h1 style="max-width:24ch;">Same job, different trade-offs.</h1>
+    <p class="lede">Three head-to-head comparisons across the techniques covered in Section A,
+    each scored on mechanism, complexity, strengths, weaknesses, and best-fit use case.</p>
+  </section>
+
+  <section class="block" style="padding-top:34px;">
+
+    <div class="compare">
+      <h3>Stemming <span style="opacity:.6;font-weight:400;">vs</span> Lemmatization <span class="owner-tag">Shivam Sankpal</span></h3>
+      <table>
+        <thead><tr><th>Dimension</th><th>Stemming</th><th>Lemmatization</th></tr></thead>
+        <tbody>
+          <tr><th>Working mechanism</th><td>Heuristic suffix-stripping (e.g. Porter algorithm) without checking real-word validity.</td><td>Dictionary + POS-aware lookup that maps a word to its true grammatical base form.</td></tr>
+          <tr><th>Computational complexity</th><td>Very low &mdash; simple rule application, O(1) per word.</td><td>Higher &mdash; needs POS tagging and a lexical resource lookup per word.</td></tr>
+          <tr><th>Strengths</th><td>Fast, no dictionary required, good enough when speed matters more than precision.</td><td>Linguistically accurate, output is always a real word, better for meaning-sensitive tasks.</td></tr>
+          <tr><th>Weaknesses</th><td>Produces non-words ("studi", "univers"); can over/under-stem.</td><td>Slower; requires additional linguistic resources and context (POS).</td></tr>
+          <tr><th>Suitable applications</th><td>Search engines, information retrieval at scale.</td><td>Chatbots, QA systems, any task where output must be readable/correct.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="compare">
+      <h3>TF <span style="opacity:.6;font-weight:400;">vs</span> TF-IDF <span class="owner-tag">Jayraj Sanas</span></h3>
+      <table>
+        <thead><tr><th>Dimension</th><th>TF</th><th>TF-IDF</th></tr></thead>
+        <tbody>
+          <tr><th>Working mechanism</th><td>Counts a term's frequency within a single document only.</td><td>Multiplies TF by IDF, factoring in how rare the term is across the whole corpus.</td></tr>
+          <tr><th>Computational complexity</th><td>O(n) per document &mdash; a single pass to count terms.</td><td>O(n) per document plus one corpus-wide pass to compute IDF; slightly higher overall.</td></tr>
+          <tr><th>Strengths</th><td>Very simple, cheap, easy to explain.</td><td>Down-weights common words automatically, surfaces genuinely distinctive terms.</td></tr>
+          <tr><th>Weaknesses</th><td>Overweights common words ("the", "is") that appear in every document.</td><td>Needs the full corpus stats in advance; still ignores word order and meaning.</td></tr>
+          <tr><th>Suitable applications</th><td>Quick keyword counts, simple frequency analysis.</td><td>Search ranking, document similarity, classic text classifiers.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="compare">
+      <h3>Word2Vec <span style="opacity:.6;font-weight:400;">vs</span> FastText <span class="owner-tag">Joint Analysis</span></h3>
+      <table>
+        <thead><tr><th>Dimension</th><th>Word2Vec</th><th>FastText</th></tr></thead>
+        <tbody>
+          <tr>
+            <th>Working mechanism</th>
+            <td>Learns one dense vector per whole word using CBOW (predict word from context) or Skip-gram (predict context from word).</td>
+            <td>Represents each word as the sum of its character n-gram (subword) embeddings, then learns those subword vectors with the same CBOW/Skip-gram objective.</td>
+          </tr>
+          <tr>
+            <th>Computational complexity</th>
+            <td>Lower memory and training cost &mdash; one embedding per vocabulary word.</td>
+            <td>Higher memory and training cost &mdash; must store and combine many subword n-gram embeddings per word.</td>
+          </tr>
+          <tr>
+            <th>Strengths</th>
+            <td>Fast to train, smaller model size, strong semantic relationships for common words in the training vocabulary.</td>
+            <td>Handles out-of-vocabulary and rare words gracefully; excels on morphologically rich languages (e.g. Hindi, Finnish, Turkish) and misspellings.</td>
+          </tr>
+          <tr>
+            <th>Weaknesses</th>
+            <td>Cannot produce a vector for a word it never saw during training; weak on rare/morphological variants.</td>
+            <td>Larger model footprint; subword composition can blur meaning for short or unrelated-looking words.</td>
+          </tr>
+          <tr>
+            <th>Suitable applications</th>
+            <td>English-heavy tasks with a large, stable vocabulary &mdash; recommendation, semantic search.</td>
+            <td>Multilingual or low-resource-language NLP, social media text with typos/slang, spell-tolerant search.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script>window.ACTIVE_PAGE = "comparisons";</script>
+<script src="../js/nav.js"></script>
+</body>
+</html>

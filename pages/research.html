@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research &amp; Industry Insights &middot; NLP Knowledge Repository</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main class="wrap">
+
+  <section class="hero" style="padding:48px 0 30px;">
+    <span class="token">section_e::research_and_industry</span>
+    <h1 style="max-width:22ch;">What's happening beyond the textbook.</h1>
+    <p class="lede">Two research directions, two industrial deployments, and one open-source
+    framework that turns Week 1 concepts into production systems.</p>
+  </section>
+
+  <section class="block" style="padding-top:34px;">
+    <div class="block-head"><h2>Recent research developments</h2></div>
+    <div class="insight-grid">
+      <div class="insight-card">
+        <h4>Instruction-tuned Large Language Models</h4>
+        <p>Building on transformer-based representations, recent research focuses on fine-tuning
+        pretrained models with human instructions and feedback so a single model can follow
+        natural-language commands across many tasks without task-specific training.</p>
+        <p><strong>Relevance:</strong> Extends contextual embeddings and transformers from Week 1 into
+        general-purpose assistants used for writing, coding, and analysis.</p>
+      </div>
+      <div class="insight-card">
+        <h4>Efficient Subword Tokenization for Low-Resource Languages</h4>
+        <p>Ongoing work improves subword tokenization (building on FastText-style n-gram ideas) so
+        models handle rare, regional, and low-resource languages without needing huge vocabularies.</p>
+        <p><strong>Relevance:</strong> Directly extends the Tokenization and FastText concepts covered
+        in this repository to fairer, more inclusive language technology.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head"><h2>Industrial applications</h2></div>
+    <div class="insight-grid">
+      <div class="insight-card">
+        <h4>Enterprise Search &amp; Knowledge Retrieval</h4>
+        <p>Companies combine TF-IDF-style keyword search with dense embedding search
+        ("hybrid retrieval") to let employees find internal documents using natural queries.</p>
+        <p><strong>Relevance:</strong> A direct industrial use of TF-IDF and word/contextual embeddings
+        from Sections A and B.</p>
+      </div>
+      <div class="insight-card">
+        <h4>Customer Support Automation</h4>
+        <p>Support platforms use tokenization, lemmatization, and contextual embeddings to
+        automatically classify and route incoming tickets, and to power chatbot first-response.</p>
+        <p><strong>Relevance:</strong> Shows preprocessing and representation techniques operating
+        together in a real production pipeline.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head"><h2>Open-source NLP framework</h2></div>
+    <div class="insight-grid">
+      <div class="insight-card">
+        <h4>spaCy</h4>
+        <p>An open-source Python library providing production-grade tokenization, sentence
+        segmentation, lemmatization, POS tagging, and pretrained embeddings out of the box.</p>
+        <p><strong>Relevance:</strong> Implements nearly every Section A preprocessing concept in this
+        repository as ready-to-use pipeline components, making it a natural next step after
+        this activity.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script>window.ACTIVE_PAGE = "research";</script>
+<script src="../js/nav.js"></script>
+</body>
+</html>
