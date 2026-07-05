@@ -4,8 +4,8 @@ A responsive educational website for **CCE Activity I** in Natural Language Proc
 
 ## Team
 
-- **Jayraj Sanas** - SYCM3-53
-- **Shivam Sankpal** - SYCM3-54
+- **Jayraj Sanas** - TYCM3-53
+- **Shivam Sankpal** - TYCM3-54
 - TY B.Tech Computer Engineering
 - Shah & Anchor Kutchhi Engineering College
 - Academic Year 2026-27
