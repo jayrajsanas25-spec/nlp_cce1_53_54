@@ -3,70 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sustainability &amp; Societal Impact &middot; NLP Knowledge Repository</title>
+<title>Sustainability &amp; Societal Impact | NLP Knowledge Repository</title>
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
 <div id="site-header"></div>
+<main class="wrap sustainability-page">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a><i data-lucide="chevron-right"></i><span aria-current="page">Sustainability</span>
+  </nav>
 
-<main class="wrap">
-
-  <section class="hero" style="padding:48px 0 30px;">
-    <span class="token">how_nlp_helps::society</span>
-    <h1 style="max-width:24ch;">How NLP Can Contribute to Society and Sustainable Development</h1>
+  <section class="hero sustainability-hero">
+    <span class="token"><i data-lucide="leaf"></i> Sustainability &amp; Society</span>
+    <h1>How NLP Can Contribute to Society and Sustainable Development</h1>
+    <p class="lede">Language technology can create broader access to information, education, communication, and essential public services.</p>
   </section>
 
-  <section class="block" style="padding-top:34px;">
-    <div class="essay">
-      <p>Natural Language Processing is often discussed purely as a technical field, but the
-      techniques covered in this repository &mdash; tokenization, normalization, vectorization,
-      and language representation &mdash; have direct societal value once they are pointed at
-      real problems of access and inclusion.</p>
+  <section class="block sustainability-content">
+    <article class="impact-card impact-intro">
+      <span class="impact-icon"><i data-lucide="sparkles"></i></span>
+      <div><h2>Introduction</h2><p>Natural Language Processing is often discussed purely as a technical field, but the techniques covered in this repository &mdash; tokenization, normalization, vectorization, and language representation &mdash; have direct societal value once they are pointed at real problems of access and inclusion.</p></div>
+    </article>
 
-      <p><strong>Language accessibility</strong> is the clearest example. Techniques like subword
-      tokenization and FastText-style embeddings were designed precisely to handle
-      morphologically complex and low-resource languages, which means NLP tools no longer have
-      to be built "for English first, everyone else later." This directly supports
-      <strong>regional language technologies</strong>: voice assistants, translation tools, and
-      search engines that work in Hindi, Marathi, Tamil, or other regional languages let
-      millions of people use digital services in the language they actually think in, rather
-      than being excluded because they aren't fluent in English.</p>
+    <div class="impact-grid">
+      <article class="impact-card">
+        <span class="impact-icon"><i data-lucide="globe-2"></i></span>
+        <div><h2>Language Accessibility</h2><p>Techniques like subword tokenization and FastText-style embeddings were designed precisely to handle morphologically complex and low-resource languages, which means NLP tools no longer have to be built "for English first, everyone else later."</p></div>
+      </article>
 
-      <p><strong>Educational inclusion</strong> is another strong link. Automated summarization
-      and question-answering systems, built on the preprocessing and embedding pipelines in
-      this repository, can convert dense textbooks into simplified summaries or answer student
-      questions in real time, effectively giving every learner access to a personal tutor.
-      This is particularly valuable in under-resourced schools where trained teachers are in
-      short supply.</p>
+      <article class="impact-card">
+        <span class="impact-icon"><i data-lucide="languages"></i></span>
+        <div><h2>Regional Language Technologies</h2><p>This directly supports regional language technologies: voice assistants, translation tools, and search engines that work in Hindi, Marathi, Tamil, or other regional languages, letting millions of people use digital services in the language they actually think in, rather than being excluded because they aren't fluent in English.</p></div>
+      </article>
 
-      <p><strong>Assistive technologies</strong> for people with disabilities also depend heavily
-      on these techniques. Text-to-speech and speech-to-text systems rely on the same sentence
-      segmentation and language-modeling foundations covered here to help visually impaired
-      users read digital text, or to help people with speech or motor impairments communicate
-      through predictive, embedding-based text input.</p>
+      <article class="impact-card">
+        <span class="impact-icon"><i data-lucide="graduation-cap"></i></span>
+        <div><h2>Educational Inclusion</h2><p>Educational inclusion is another strong link. Automated summarization and question-answering systems, built on the preprocessing and embedding pipelines in this repository, can convert dense textbooks into simplified summaries or answer student questions in real time, effectively giving every learner access to a personal tutor. This is particularly valuable in under-resourced schools where trained teachers are in short supply.</p></div>
+      </article>
 
-      <p>Finally, <strong>citizen services</strong> benefit when government portals and
-      grievance-redressal chatbots use NLP to understand queries typed in informal, mixed-language
-      text and route them correctly. This reduces bureaucratic friction for citizens who may not
-      be comfortable with formal written English, supporting more equitable access to public
-      services.</p>
+      <article class="impact-card">
+        <span class="impact-icon"><i data-lucide="accessibility"></i></span>
+        <div><h2>Assistive Technologies</h2><p>Assistive technologies for people with disabilities also depend heavily on these techniques. Text-to-speech and speech-to-text systems rely on the same sentence segmentation and language-modeling foundations covered here to help visually impaired users read digital text, or to help people with speech or motor impairments communicate through predictive, embedding-based text input.</p></div>
+      </article>
 
-      <p>Taken together, the concepts in this repository are not just steps in a machine
-      learning pipeline &mdash; they are the groundwork for making digital information, education,
-      and public services genuinely reachable for people who are currently underserved by
-      English-centric, text-heavy technology. Treating inclusion as a design goal from the
-      preprocessing stage onward, rather than an afterthought, is what turns NLP from a purely
-      technical achievement into a sustainable, socially beneficial one.</p>
-
-      <p class="wc">Word count: ~430 words (within the 300&ndash;500 word requirement)</p>
+      <article class="impact-card impact-wide">
+        <span class="impact-icon"><i data-lucide="building-2"></i></span>
+        <div><h2>Citizen Services</h2><p>Finally, citizen services benefit when government portals and grievance-redressal chatbots use NLP to understand queries typed in informal, mixed-language text and route them correctly. This reduces bureaucratic friction for citizens who may not be comfortable with formal written English, supporting more equitable access to public services.</p></div>
+      </article>
     </div>
+
+    <article class="impact-card impact-conclusion">
+      <span class="impact-icon"><i data-lucide="circle-check-big"></i></span>
+      <div><h2>Conclusion</h2><p>Taken together, the concepts in this repository are not just steps in a machine learning pipeline &mdash; they are the groundwork for making digital information, education, and public services genuinely reachable for people who are currently underserved by English-centric, text-heavy technology. Treating inclusion as a design goal from the preprocessing stage onward, rather than an afterthought, is what turns NLP from a purely technical achievement into a sustainable, socially beneficial one.</p><p class="wc">Word count: ~430 words (within the 300&ndash;500 word requirement)</p></div>
+    </article>
+
+    <a class="button secondary back-home" href="../index.html"><i data-lucide="arrow-left"></i>Back to Home</a>
   </section>
-
 </main>
-
 <div id="site-footer"></div>
-
 <script>window.ACTIVE_PAGE = "sustainability";</script>
 <script src="../js/nav.js"></script>
 </body>

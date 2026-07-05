@@ -1,44 +1,79 @@
-# NLP Knowledge Artifact Repository
+# NLP Knowledge Repository
 
-Static site for **CCE Activity I – Knowledge Artifact Repository**
-(Course: CMCOR1PE301.1, Natural Language Processing), Week 1.
+A responsive educational website for **CCE Activity I** in Natural Language Processing, covering selected Week 1 foundations through concept cards, comparisons, and workflow diagrams.
 
-Prepared by **Jayraj Sanas** & **Shivam Sankpal**, TY B.Tech Computer Engineering,
-Shah & Anchor Kutchhi Engineering College (SAKEC), Mumbai.
+## Team
 
-## Structure
-```
-index.html                    Home page — intro, objectives, nav cards, Week 1 topics
-pages/concepts.html           Section A – Concept Cards (4 assigned concepts with focused illustrations)
-pages/comparisons.html        Section B – Comparative Analysis (3 comparisons)
-pages/workflows.html          Section C – Workflow Diagrams (3 SVG pipelines)
-pages/applications.html       Section D – Real-World Applications (5)
-pages/research.html           Section E – Research & Industry Insights
-pages/sustainability.html     Sustainability & Societal Impact essay
-pages/contribution.html       Contribution Matrix + Reflection Notes
-pages/references.html         References (NLTK, spaCy, Stanford NLP, Hugging Face, Google Research, Jurafsky & Martin, OpenAI)
-pages/ai-declaration.html     AI Usage Declaration
-css/style.css                 Shared stylesheet (light + dark theme, animations)
-js/nav.js                     Shared header/footer injector + dark/light mode toggle
-```
+- **Jayraj Sanas** - SYCM3-53
+- **Shivam Sankpal** - SYCM3-54
+- TY B.Tech Computer Engineering
+- Shah & Anchor Kutchhi Engineering College
+- Academic Year 2026-27
+
+## Concept Cards
+
+The repository contains exactly four concept cards:
+
+| Member | Concepts |
+| --- | --- |
+| Jayraj Sanas | Tokenization, TF-IDF |
+| Shivam Sankpal | Lemmatization, Word2Vec |
+
+Each card includes a definition, purpose, working principle, example, advantages, limitations, applications, and an SVG illustration.
+
+## Repository Sections
+
+- **Home** - Repository overview, Week 1 topics, contributions, and quick navigation
+- **Concept Cards** - Four assigned NLP concepts
+- **Comparisons** - Stemming vs Lemmatization, TF vs TF-IDF, and Word2Vec vs FastText
+- **Workflow** - Text Preprocessing, Feature Engineering, and Text-to-Vector diagrams
+- **Applications** - Practical uses of NLP techniques
+- **Research** - Research and industry insights
+- **Contribution** - Contribution matrix and individual reflections
+- **References** - Academic sources, frameworks, and organizations
+- **AI Declaration** - Statement describing the use of AI assistance
 
 ## Features
-- Dark / light mode toggle (top-right of the navigation bar, persisted via `localStorage`).
-- Smooth hover and entrance animations on all cards and diagrams.
-- SVG workflow diagrams for all three Section C pipelines.
-- Category icons, mini flow-diagrams, and one-line summary boxes on every concept card.
-- Fully responsive layout (mobile, tablet, desktop).
 
-## Deploy to GitHub Pages
-1. Push everything in this folder to the `main` branch of a GitHub repo
-   (`index.html` must sit at the repo root, or in `/docs` — either works).
-2. On GitHub: **Settings → Pages → Build and deployment → Deploy from a branch**.
-3. Choose branch `main`, folder `/ (root)`, then Save.
-4. Your site will be live at `https://<username>.github.io/<repo-name>/` within a
-   couple of minutes.
+- Responsive desktop, tablet, and mobile layouts
+- Persistent light and dark themes using CSS variables
+- Lucide icons
+- Accessible navigation and semantic HTML
+- Subtle entrance and hover animations
+- SVG concept illustrations and workflow diagrams
+- Static architecture suitable for GitHub Pages
 
-## Before you submit
-- [ ] Export this repo as a PDF/ZIP for submission alongside the live link.
-- [ ] Double-check the Contribution Matrix in `pages/contribution.html` still matches
-      your actual split of work.
-- [ ] Review the AI Usage Declaration (`pages/ai-declaration.html`) for accuracy.
+## Project Structure
+
+```text
+index.html
+css/style.css
+js/nav.js
+pages/
+  ai-declaration.html
+  applications.html
+  comparisons.html
+  concepts.html
+  contribution.html
+  references.html
+  research.html
+  sustainability.html
+  workflows.html
+```
+
+## Run Locally
+
+Open `index.html` directly in a browser. No build process or dependencies are required.
+
+## Deploy with GitHub Pages
+
+1. Push the repository to the `main` branch.
+2. Open **Settings > Pages** in GitHub.
+3. Select **Deploy from a branch**.
+4. Choose `main` and `/ (root)`, then save.
+
+The website will be published at:
+
+```text
+https://jayrajsanas25-spec.github.io/nlp_cce1_53_54/
+```

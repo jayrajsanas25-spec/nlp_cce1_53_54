@@ -7,7 +7,7 @@
     ["index", "Home", "index.html"], ["concepts", "Concept Cards", "pages/concepts.html"],
     ["comparisons", "Comparisons", "pages/comparisons.html"], ["workflows", "Workflow", "pages/workflows.html"],
     ["applications", "Applications", "pages/applications.html"], ["research", "Research", "pages/research.html"],
-    ["contribution", "Contribution", "pages/contribution.html"], ["references", "References", "pages/references.html"]
+    ["sustainability", "&#127793; Sustainability", "pages/sustainability.html"], ["contribution", "Contribution", "pages/contribution.html"], ["references", "References", "pages/references.html"]
   ];
   const active = window.ACTIVE_PAGE || "index";
   const prefix = active === "index" ? "" : "../";
@@ -37,7 +37,7 @@
     });
   }
   const footer = document.getElementById("site-footer");
-  if (footer) footer.innerHTML = `<footer><div class="wrap footer-grid"><div><strong>Prepared By</strong>Jayraj Sanas | SYCM3-53<br>Shivam Sankpal | SYCM3-54<br>TY B.Tech Computer Engineering<br>Shah &amp; Anchor Kutchhi Engineering College<br>Academic Year 2026-27</div><div class="footer-meta">Natural Language Processing | Educational Repository<div class="footer-links"><a href="${prefix}pages/references.html">References</a><a href="${prefix}pages/ai-declaration.html">AI Declaration</a></div></div></div></footer>`;
+  if (footer) footer.innerHTML = `<footer><div class="wrap footer-grid"><div><strong>Prepared By</strong>Jayraj Sanas (SYCM3-53)<br>Shivam Sankpal (SYCM3-54)<br>TY B.Tech Computer Engineering<br>Shah &amp; Anchor Kutchhi Engineering College</div><div class="footer-meta">Natural Language Processing | Educational Repository<div class="footer-links"><a href="${prefix}pages/references.html">References</a><a href="${prefix}pages/ai-declaration.html">AI Declaration</a></div></div></div></footer>`;
   const script = document.createElement("script"); script.src = "https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js";
   script.onload = () => window.lucide.createIcons(); document.head.appendChild(script);
 })();
