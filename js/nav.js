@@ -7,7 +7,7 @@
     ["index", "Home", "index.html"], ["concepts", "Concept Cards", "pages/concepts.html"],
     ["comparisons", "Comparisons", "pages/comparisons.html"], ["workflows", "Workflow", "pages/workflows.html"],
     ["applications", "Applications", "pages/applications.html"], ["research", "Research", "pages/research.html"],
-    ["sustainability", "&#127793; Sustainability", "pages/sustainability.html"], ["contribution", "Contribution", "pages/contribution.html"], ["references", "References", "pages/references.html"]
+    ["sustainability", "Sustainability", "pages/sustainability.html"], ["contribution", "Contribution", "pages/contribution.html"], ["references", "References", "pages/references.html"]
   ];
   const active = window.ACTIVE_PAGE || "index";
   const prefix = active === "index" ? "" : "../";
